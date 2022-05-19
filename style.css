@@ -6,7 +6,7 @@
 nav{
     width: 100%;
     height: 75px;
-    background-color: #505d61;
+    background-color: #31a5b9;
     line-height: 75px;
     padding: 0px 100px;
     z-index: 1;
@@ -39,28 +39,239 @@ nav ul li a{
 nav ul li a:hover{
     color: #adc2ee;
 }
-.image img{
+.health{
+    color: #fff;
+}
+/*.doctor2{
+    position: relative;
+}
+.doctor2{
+    padding: 0;
+    position: relative;
     width: 100%;
     height: 0px auto;
     opacity: 0.80;
+    color: #fff;
+    background: #31a5b9;
+    display: flex;
+    overflow: hidden;
+   
+}
+.banner {
+    position: absolute;
+    line-height: 1.6;
+    top: 100;
+    right: 10px;
+    width: 40%;
+    top: 50%;
+    font-style: italic;
+    color: #31a5b9;
+    padding: 5px;
+    margin-top: 0px;
 }
 
 
-body {
+.imagegroup1{
+    display: flex;
+    width: 100%;
+}
+.imagegroup1 img{
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.imagegroup1{
+    animation: travel 0.9s ease-in-out infinite;
+}
+@keyframes travel{
+    0%,100%{
+        transform: translate3d(-100,0,0);
+    }
+    100%{
+        transform: translate3d(-100%,0,0);
+    }
+    100%{
+        transform: translate3d(-100%,100,100);
+    }
+}
+/.host1 {
+    position: relative;
+}
+.host1 {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 0px auto;
+    opacity: 0.80;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+}
+.caring {
+    position: absolute;
+    line-height: 1.6;
+    top: 100;
+    right: 10px;
+    width: 40%;
+    top: 50%;
+    font-style: italic;
+    color: #31a5b9;
+    padding: 5px;
+    margin-top: 0px;
+}
+.imagegroup2 {
+    display: flex;
+    width: 100%;
+}
 
+.imagegroup2 img {
+    flex-shrink: 0;
+    object-fit: cover;
+}
 
-    background: rgb(188, 222, 242);
+.imagegroup2 {
+    animation: travel 0.9s ease-in-out infinite;
+}
+
+@keyframes travel {
+
+    0%,
+    100% {
+        transform: translate3d(-100, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 100, 100);
+    }
+}
+
+/*.host2 {
+    position: relative;
+}
+
+.host2 {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 0px auto;
+    opacity: 0.80;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+}
+
+.imagegroup3 {
+    display: flex;
+    width: 100%;
+}
+
+.imagegroup3 img {
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.imagegroup3 {
+    animation: travel 5s ease-in-out infinite;
+}
+
+@keyframes travel {
+
+    0%,
+    100% {
+        transform: translate3d(-100, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100%, 100, 100);
+    }
+*
+.are {
+    position: absolute;
+    line-height: 1.6;
+    top: 100;
+    right: 10px;
+    width: 40%;
+    top: 50%;
+    font-style: italic;
+    color: #31a5b9;
+    padding: 5px;
+    margin-top: 0px;
+}
+.host2 {
+    position: relative;
+}
+
+.host2 {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 0px auto;
+    opacity: 0.80;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+}*/
+.slider-box{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    position:relative;
+    overflow: hidden;
+}
+#slider{
+    width: 100%;
+    display: inline-flex;
+    transition: 0.7s;
+}
+#slider img{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    animation: travel 20s ease-in-out infinite;
+}
+@keyframes travel{
+    100%{
+        transform: translate3d(0,0,0);
+    }
+    50% {
+        transform: translate3d(-100,0,0);
+    }
+    25%{
+        transform: translate3d(-100,0,0);
+    }
+}
+.indicators{
+    position: absolute;
+    left:50%;
+    bottom:150px;
+    transform:translateX(-50%);
+}
+.indicators span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background:#e5f6f9;
+    cursor: pointer;
 }
 .container {
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 .card {
-    background: white;
+    background: rgb(255, 255, 255);
     width: 270px;
     height: 400px;
-    margin: 10px;
     border-radius: 10px;
+    margin: 15px;
 }
 
 .card-image {
@@ -72,23 +283,31 @@ body {
 }
 
 .card-1 {
-    background-image: url(https: //www.dreamstime.com/photos-images/stethoscope.html);
+    background-image: url(download3.webp);
+    margin:bottom 15px;
+    width: calc(100%/2-20px);
+    font-family:'Roboto', sans-serif;
+
 }
 
 .card-2 {
-
+background-image: url(download2.jpg);
+font-family: 'Roboto', sans-serif;
 }
 
 .card-3 {
-
+background-image: url(download1.jpg);
+font-family: 'Roboto', sans-serif;
 }
 
 .card-4 {
-
+background-image: url(download4.webp);
+font-family: 'Roboto', sans-serif;
 }
 
 .card h2{
     padding: 10px;
+    background: #ccd4e7;
 }
 
 .card p{
@@ -96,36 +315,99 @@ body {
 }
 
 .card a{
-    background-color:white;
+    background-color:rgb(220, 235, 241);
     colour:aquablue;
-    padding: 15px 20px;
+    padding: 15px 10px;
     text-align:center;
+    width: 15%;
 }
-form {
+.card{
+    background: #ccd4e7;
+}
+.box {
     
-            position: absolute;
-            font-style: italic;
-            color: rgb(15, 11, 11);
+      position:relative
+            font-style:oblique
+            
             top: 100px;
             right: 30px;
-            width: 532px;
-            border-radius: 6px;
+            width: 40%;
             line-height: 29px;
-            background-color: rgba(202, 231, 247, 0.5);
+            background-color:rgb(220,235,241);
             padding: 0 22px;
             font-size: 16px;
+            margin-bottom :15px;
+            margin:auto;  
+             
         }
 .registration-form
 {
-    position: absolute;
-        font-style: italic;
+    position:-ms-page;
+        font-style:normal;
         top: 100px;
         right: 30px;
-        width: 532px;
-        border-radius: 6px;
-        line-height: 29px;
-        background-color: rgb(105, 204, 204);
+        width: 40%;
+        line-height: 1.4285;
+        border:1px solid rgba(215, 53, 53, 0.3);
+        text-align: center;
+        justify-content: center;
+        line-height: 40px;
+        background-color: #31a5b9;
         padding: 0 22px;
         font-size: 16px
+        display: block;
+        font-weight:500;
+        color: #fff;
+        margin: auto ;
+
+}
+
+.test{
+    color: #fff;
+    text-align: center;
+    background: #090909;
+    margin:auto;
+    width: 60%;
+    line-height: 1.6;
+    font-size: small;
+}
+.round{
+    background: #090909;
+}
+.round img{
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+}
+.clinic{
+        color:#fff;
+        text-align: center;
+        width: calc(100%/2-20px);
+        padding: 10px;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 300;
+        background: #31a5b9;
+        width: 100%;
+}
+.text{
+    width: 35%;
+    line-height: 1.8;
+    text-align: center;
+    margin: auto;
+    color:#fff;
+    background: #31a5b9;
+
+    }
+.new{
+    width: 100%;
+   background: #31a5b9;
+}
+.black{
+    background: #090909;
+}
+.copy{
+    color: #fff;
+    background: #31a5b9;
+    }
 }
     

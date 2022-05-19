@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div>
     
     <nav>
         <div class="logo">
@@ -21,82 +22,186 @@
                 <li><a href="#"> Doctors</a></li>
                 <li><a href="#"> contact</a></li>
             </ul>
-            <h2>HealthCare</h2>
         </div>
+            <div class="health">
+            <h2>HealthCare</h2>
+            </div>
         
     </nav>
-         <div class="image">
-             <img src="pp.jpg.webp" alt="doctors emblem">
-         </div>
-            <div class="registration-form">
-                <h1>Make an Appointment</h1>
-            </div>
-            <br>
-            <br>
-            <form action="#" method="post">
-                <br>
-                Full Name:
-                <input type="text" name="fullname" placeholder="Full Name">
-                <br>
-                <br>
-                User Name:
-                <input type="text" name="Username" placeholder="User Name">
-                <br>
-                <br>
-                Email:
-                <input type="text" name="email" placeholder="Email">
-                <br>
-                <br>
-                Mobilenumber:
-                <input type="mobilenumber" name="email" placeholder="MobileNumber">
-                <br>
-                <br>
-                <input type="submit" placeholder="submit">
+    <div class="slider-b0x">
+        <div id="slider">
+            <img src="hospital1.jpg" alt="">
+            <img src="hospital3.jpg" alt="">
+            <img src="hospital2.jpg" alt="">
+        </div>
+        <div class="indicators">
+            <span id="btn1"></span>
+            <span id="btn2"></span>
+            <span id="btn3"></span>
+        </div>
+    </div>
+    
+    <script>
+        var slide = document.getElementById("slider");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
 
-            </form>
-            
+        btn1.onclick = function(){
+            slide.style.transform = "translateX(0px)";
+        }
 
+        btn2.onclick = function () {
+                slide.style.transform = "translateX(-100%)";
+        }
+
+        btn3.onclick = function () {
+                slide.style.transform = "translateX(-200%)";
+        }
+
+    </script>
+
+    <div class="clinic">
+        <h1>Welcome To Our Health Care Clinic</h1>
+        <br>
+    </div>
+    <div class="new">
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis culpa facere quaerat, illum dolorum et explicabo odit quam rem laborum eligendi cumque eveniet sint perferendis in sit temporibus mollitia delectus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam asperiores delectus adipisci distinctio ab laudantium nisi quos repellat libero, maxime, earum nihil architecto. Tempora quibusdam omnis fugit, iure sequi maiores</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum laboriosam deleniti? Cupiditate deleniti amet dicta quas? Quisquam dolor itaque atque velit commodi maxime fuga quos! Explicabo tempora laboriosam quos</p>
+        <br>
+        <a href="">read more...</a>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    </div>  
+
+    <div class="why">
+    <br>
+    <br>
     <h1>Why Choose Us</h1>
     <br>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapien</p>
     <br>
     <br>
     <br>
+    </div>
     
     
+ <div>
    <section class="container">
       <div class="card">
       <div class="card-image card-1"></div>
       <h2>Top qualified Doctors</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, quo explicabo ducimus ratione, porro veniam.</p>
+      <br>
+      <br>
        <a href="">read more...</a>  
       </div>
     <div class="card">
-    <div class="card-image"></div>
+    <div class="card-image card-2"></div>
     <h2>Online Q&A</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, quo explicabo ducimus ratione, porro veniam</p>
+    <br>
+    <br>
     <a href="">read more...</a>
     </div>
 
     <div class="card">
-    <div class="card-image"></div>
+    <div class="card-image card-3"></div>
     <h2>Symptom check</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, quo explicabo ducimus ratione, porro veniam.</p>
+    <br>
+    <br>
     <a href="">read more...</a>
     </div>
 
     <div class="card">
-    <div class="card-image"></div>
+    <div class="card-image card-4"></div>
     <h2>Compititive Pricing</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, quo explicabo ducimus ratione, porro veniam.</p>
+    <br>
+    <br>
     <a href="">read more...</a>
+    
     </div>
+  </div>
+    
+
+    
 
    </section>
    <br>
    <br>
-<p>copyright&copy;2022
-</p>
-<h3><a href="#logo">Back To Top</a></h3>
+    </div>
+    <br>
+    <br>
+    <div class="black">
+    <div class="test">
+    <br>
+    <br>
+    <h2>Testimonial</h2>
+    <br>
+    <h4>What Our Patients Say About Us</h4>
+    <br>
+    <br>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi cupiditate, labore dolor ad explicabo, vel, error tempore voluptatum eum laudantium minus iure ex voluptate rem! Voluptates consequatur dolorum voluptatem iste.</p>
+    <br>
+    <br>
+    <br>
+    </div>
+       <div class="round">
+        <img src="mom.webp" alt="doctor pic">
+        <br>
+        <br>
+       </div>
+    
+    <div class="registration-form">
+        <h3>Make an Appointment</h3>
+        <h3>1-800-123-4567</h3>
+    </div>
+    <div class="box">
+    <form action="#" method="post">
+        <br>
+        Full Name:
+        <input type="text" name="fullname" placeholder="Enter Your Full Name">
+        <br>
+        <br>
+        User Name:
+        <input type="text" name="Username" placeholder=" Enter Your User Name">
+        <br>
+        <br>
+        Email Address:
+        <input type="text" name="email" placeholder="Enter Your Email">
+        <br>
+        <br>
+        Mobilenumber:
+        <input type="mobilenumber" name="email" placeholder="Enter Your MobileNumber">
+        <br>
+        <br>
+        Category:
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other
+        <br>
+        <br>
+        <input type="submit" placeholder="submit">
+    
+    </form>
+    </div>
+    <br>
+    <br>
+    </div>
+             <div class="copy">
+                <br>
+                <br>
+                <p>copyright&copy;2022 Your Website Link</p>
+                <br>
+             </div>
+</div>
 </body>
 </html>
