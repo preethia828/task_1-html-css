@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick="pop()">Click Me!</button>
+    <script>
+        function pop() {
+            let c = document.getElementById("demo");
+            if (c.innerHTML == "JavaScript can change HTML content") {
+                c.innerHTML = "changed";
+            }
+            else {
+                c.innerHTML = "JavaScript can change HTML content";
+            }
+        }
+    </script>
+</body>
+
+</html>

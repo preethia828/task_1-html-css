@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <input type="number" id='v1'>value1</input>
+    <br>
+    <br>
+    <input type="number"id='v2'>value2</input>
+    <br>
+    <br>
+    <input type="number"id='v3'>value3</input>
+    <br>
+    <input type="submit" onclick="mean( document.getElementById('v1').value,document.getElementById('v2').value,document.getElementById('v3').value)"></input>
+
+    <script>
+
+        function mean(a,b,c){
+           let d=((+a)+(+b)+(+c))/3;
+           alert(d);
+        }
+    </script>
+
+</body>
+</html>

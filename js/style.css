@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.box {
+    color: rgb(12, 1, 11);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    background: #b2b7b8;
+    margin:auto;
+    width: 25%;
+    line-height: 3.6;
+    font-size: small;
+    bottom: 13%;
+}
+.registration-form {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    background: #31a5b9;
+    margin:auto;
+    width: 25%;
+    line-height: 1.6;
+    font-size: small;
+    height: 100px;
+    
+   
+}
